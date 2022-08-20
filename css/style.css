@@ -373,6 +373,11 @@ header a i {
   cursor: pointer;
   white-space: nowrap;
   font-size: 16px;
+  transition: 0.3s all ease-in-out;
+}
+.subscribe-modal .modal-content .modal .modal-button:hover {
+  color: #000;
+  background-color: #ccc;
 }
 
 @media only screen and (max-width: 992px) {
