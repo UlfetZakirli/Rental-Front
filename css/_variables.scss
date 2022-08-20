@@ -1,0 +1,79 @@
+$fontFamily:"Raleway", Arial, Helvetica, sans-serif;
+$fontWeight:400;
+$h3-fontSize:24px;
+$body-fontSize:15px;
+$lineHeight:1.5;
+$backgroundColor: #f1f1f1;
+$maxWidth:980px;
+
+//Input/form 
+ @mixin input-form{
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    overflow: visible;
+    margin: 13px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+//Button/form
+@mixin button-form{
+    color: #fff;
+    background-color: #4CAF50;
+    text-align: left;
+    display: block;
+    border: none;
+    width: 100%;
+    padding: 10px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: .3s ease-in-out;
+
+}
+
+//Bar/block
+@mixin  bar-block {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    outline: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+// Hover 
+@mixin btn-hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+// h4/form 
+@mixin h4-form{
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+// hr/form
+@mixin hr-form{
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}

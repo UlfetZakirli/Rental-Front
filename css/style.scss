@@ -1,0 +1,33 @@
+@import "_sidebar";
+@import "_slide";
+@import "_smallScreen";
+@import "_modals";
+@import "responsibility";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//Local-library
+.my-container {
+    padding: 0.01em 16px;
+}
+.space-col-6 {
+    width: 49.99999%;
+}
+.space-col-4{
+    width: 33.33333% !important;
+    font-size: 50px;
+}
+.d-flex{
+    display: flex;
+}
+.mtb{
+    margin: 10px 0;
+}
+.mt{
+    margin-top: 25px !important;
+}

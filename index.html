@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav id="mySidebar">
+    <div class="above-side display">
+      <i id="remove-active" class="fa fa-remove remove-icon"></i>
+      <h3 class="h3-text mt">Rental</h3>
+      <h3 class="h3-text">from $99</h3>
+      <h6>per night</h6>
+      <hr>
+      <form action="" target="_blank">
+        <p><label><i class="fa-regular fa-calendar-check"></i> Check In</label></p>
+        <div class="form-control">
+          <input class="input-checkIn" id="checkIn" id="" type="text" placeholder="DD/MM/YYYY" name="CheckIn">
+          <small>Error Message</small>
+
+        </div>
+
+        <p><label><i class="fa-regular fa-calendar"></i> Check Out</label></p>
+        <div class="form-control">
+          <input class="input-checkOut" id="checkOut" type="text"  placeholder="DD/MM/YYYY" name="CheckOut">
+          <small>Error Message</small>
+
+        </div>
+        <p><label><i class="fa fa-male"></i> Adults</label></p>
+        <div class="form-control">
+          <input class="input-adults" id="adults"  type="number" value="1" name="Adults" min="1" max="6">
+          <small>Error Message</small>
+
+        </div>
+        <p><label><i class="fa-solid fa-child-reaching"></i> Kids</label></p>
+        <div class="form-control">
+          <input class="input-kids" id="kids" type="number" value="0" name="Kids" min="0" max="6">
+          <small>Error Message</small>
+
+        </div>
+        <p><button class="search" id="search-button" type="submit">
+            <i class="fa fa-search"></i> Search availability</button></p>
+      </form>
+    </div>
+
+    <!-- Bar block -->
+    <div class="below-side">
+      <a href="#apartment" class="apartment"><i class="fa-regular fa-building"></i> Apartment</a>
+      <a href="javascript:void(0)" class="subscribe"
+        onclick="document.getElementById('subscribe').style.display='block'"><i class="fa fa-rss"></i>
+        Subscribe</a>
+      <a href="#contact" class="contact"><i class="fa fa-envelope"></i> Contact</a>
+    </div>
+
+  </nav>
+
+<!-- Top menu on small screens -->
+  <header class="small-screen">
+    <span class="w3-bar-item">Rental</span>
+    <a href="#" id="btn-toggle" class="toggle-button"><i
+        class="fa fa-bars"></i></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="overlay-effect" title="close side menu" id="myOverlay"></div>
+
+  <!-- The Apartment/Page Content-->
+  <div class="right-side">
+
+<!-- Slideshow Header -->
+    <div class="slider my-container" id="apartment">
+      <h2 class="title">The Apartment</h2>
+      <div class="mySlides" style="display:block;">
+        <img src="img/livingroom.jpg">
+        <div class="img-text">
+          <p>Living Room</p>
+        </div>
+      </div>
+      <div class="mySlides" style="display: none;">
+        <img src="img/diningroom.jpg">
+        <div class="img-text">
+          <p>Dining Room</p>
+        </div>
+      </div>
+      <div class="mySlides" style="display: none;">
+        <img src="img/bedroom.jpg">
+        <div class="img-text">
+          <p>Bedroom</p>
+        </div>
+      </div>
+      <div class="mySlides" style="display: none;">
+        <img src="img/livingroom2.jpg">
+        <div class="img-text">
+          <p>Living Room II</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider-below -->
+    <div class="slider-below">
+      <div class="img-col-3">
+        <img class="demo img-opacity" src="img/livingroom.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)"
+          title="Living room">
+      </div>
+      <div class="img-col-3">
+        <img class="demo img-opacity" src="img/diningroom.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)"
+          title="Dining room">
+      </div>
+      <div class="img-col-3 ">
+        <img class="demo img-opacity" src="img/bedroom.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)"
+          title="Bedroom">
+      </div>
+      <div class="img-col-3">
+        <img class="demo img-opacity" src="img/livingroom2.jpg" style="width:100%;cursor:pointer"
+          onclick="currentDiv(4)" title="Second Living Room">
+      </div>
+    </div>
+
+    <!-- The space -->
+    <div class="space my-container">
+      <h4><strong>The space</strong></h4>
+      <div class="space-below d-flex">
+        <div class="space-col-6">
+          <p><i class="fa fa-fw fa-male"></i> Max people: 4</p>
+          <p><i class="fa fa-fw fa-bath"></i> Bathrooms: 2</p>
+          <p><i class="fa fa-fw fa-bed"></i> Bedrooms: 1</p>
+        </div>
+        <div class="space-col-6">
+          <p><i class="fa-regular fa-clock clock"></i> Check In: After 3PM</p>
+          <p><i class="fa-regular fa-clock clock"></i> Check Out: 12PM</p>
+        </div>
+      </div>
+      <hr>
+      <h4><strong>Amenities</strong></h4>
+      <div class="space-below d-flex">
+        <div class="space-col-6">
+          <p><i class="fa fa-fw fa-shower"></i> Shower</p>
+          <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
+          <p><i class="fa fa-fw fa-tv"></i> TV</p>
+        </div>
+        <div class="space-col-6">
+          <p><i class="fa fa-fw fa-cutlery"></i> Kitchen</p>
+          <p><i class="fa-solid fa-temperature-three-quarters"></i> Heating</p>
+          <p><i class="fa fa-fw fa-wheelchair"></i> Accessible</p>
+        </div>
+      </div>
+      <hr>
+      <h4><strong>Extra Info</strong></h4>
+      <p class="info">Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit
+        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <p>We accept:
+        <i class="fa fa-credit-card"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-amex"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+      </p>
+      <hr>
+      <h4><strong>Rules</strong></h4>
+      <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.</p>
+      <p>Subscribe to receive updates on available dates and special offers.</p>
+      <p><button class="search space-col-4"
+          onclick="document.getElementById('subscribe').style.display='block'">Subscribe</button></p>
+      <hr>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact my-container" id="contact">
+      <h2>Contact</h2>
+      <i class="fa-solid fa-location-dot"></i>
+      Chicago, US
+      <br>
+      <i class="fa fa-phone"></i>
+      Phone: +00 151515
+      <br>
+      <i class="fa fa-envelope"> </i>
+      Email: mail@mail.com
+
+      <p class="mtb">Questions? Go ahead, ask them:</p>
+      <form action="" target="_blank">
+        <p>
+          <div class="form-control">
+            <input class="input-name" id="name" type="text" placeholder="Name"  name="Name">
+            <small>Error Message</small>
+          </div>
+        </p>
+        <p>
+          <div class="form-control">
+            <input class="input-email" id="email" type="text" id="txtEmail" placeholder="Email" 
+              name="Email">
+            <small>Error Message</small>
+          </div>
+        </p>
+        <p>
+          <div class="form-control">
+            <input class="input-message" id="message" type="text" placeholder="Message"  name="Message">
+            <small>Error Message</small>
+          </div>
+        </p>
+        <button type="submit" id="send-button" class="send space-col-4">Send a Message</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Subscribe Modal -->
+  <div id="subscribe" class="subscribe-modal ">
+    <div class="modal-content">
+      <div class="modal">
+        <i class="fa fa-remove" id="modal-remove"></i>
+        <h2>SUBSCRIBE</h2>
+        <p>Join our mailing list to receive updates on available dates and special offers.</p>
+        <form action="" type="_blank">
+          <p>
+            <div class="form-control">
+              <input class="modal-input" id="subEmail" type="email" placeholder="Enter e-mail">
+              <small>Error Message</small>
+            </div>
+          </p>
+          <button type="submit" id="sub-button" class="modal-button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/validations.js"></script>
+</body>
+
+</html>

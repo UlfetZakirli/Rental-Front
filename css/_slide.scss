@@ -1,0 +1,161 @@
+@import "_variables";
+
+
+//Right side on page
+.right-side {
+    margin-left: 260px;
+
+    // Slideshow/Header
+    .slider {
+
+        .title {
+            color: #4CAF50;
+            font-family: $fontFamily;
+            font-weight: $fontWeight;
+            margin: 10px 0;
+            font-size: 30px;
+
+        }
+
+        .mySlides {
+            position: relative;
+
+            img {
+
+                width: 100%;
+                margin-bottom: -6px;
+                vertical-align: middle;
+
+            }
+
+            .img-text {
+                color: #fff;
+                background-color: #000;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                padding: 1em 16px;
+            }
+        }
+    }
+
+    // Slider/below
+    .slider-below {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 0 8px;
+
+
+
+        .img-col-3 {
+            width: 24.99999%;
+            float: left;
+            margin-bottom: 18px;
+            padding: 0 8px;
+            vertical-align: middle;
+            transition: .2s all ease-in-out;
+
+            .img-opacity {
+                opacity: 0.60;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+
+        }
+
+        .opacity-off {
+            opacity: 1 !important;
+        }
+    }
+
+    // The Space 
+    .space {
+        h4 {
+            @include h4-form;
+        }
+
+        .space-below {
+            font-size: 18px;
+
+            p {
+                margin: 20px 0;
+
+                i {
+                    width: 1.28571429em;
+                    text-align: center;
+
+                    &.clock {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        hr {
+            @include hr-form;
+        }
+
+        p.info {
+            margin-bottom: 20px;
+        }
+
+        button {
+            @include button-form;
+            text-align: center;
+            margin-top: 10px;
+
+            &:hover {
+                @include btn-hover;
+            }
+        }
+    }
+
+    // Contact
+    .contact {
+        h2 {
+            font-size: 30px;
+            font-weight: $fontWeight;
+        }
+
+        i {
+            width: 30px;
+            line-height: $lineHeight;
+        }
+
+        form {
+          
+            input {
+                @include input-form;
+            }
+
+            button {
+                @include button-form;
+                text-align: center;
+
+                &:hover {
+                    @include btn-hover;
+                }
+            }
+        }
+    }
+}
+
+
+//Input/validations 
+.form-control.success input{
+    border:2px solid rgb(26, 167, 26) !important;
+}
+.form-control.error input{
+    border:2px solid rgb(228, 29, 22) !important;
+}
+.form-control{
+    small{
+        display: none; 
+        margin-top: -10px;     
+        margin-bottom: 10px; 
+    }
+}
+
+

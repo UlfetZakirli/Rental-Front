@@ -1,0 +1,99 @@
+@import "_variables";
+
+body {
+    line-height: $lineHeight;
+    font-family: $fontFamily;
+    font-size: $body-fontSize;
+    max-width: $maxWidth;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+
+    // Sidebar/Menu
+    nav {
+        width: 260px;
+        background-color: $backgroundColor;
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        height: 100%;
+
+
+        i.remove-icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 8px 16px;
+            display: none;
+            transition: .2s all ease-in-out;
+
+            &:hover {
+                @include btn-hover
+            }
+        }
+
+        &.active {
+            display: block !important;
+        }
+
+        //aboveSide
+        #mySidebar{
+            transition: .3s ease-in-out !important;
+        }
+        .above-side {
+            padding: 0.01em 16px;
+            position: relative;
+            transition: .3s all ease-in-out;
+
+
+            .h3-text {
+                font-family: $fontFamily;
+                font-weight: $fontWeight;
+                font-size: $h3-fontSize;
+                margin: 10px 0;
+            }
+
+
+            h6 {
+                @extend .h3-text;
+                font-size: 16px;
+
+            }
+
+            hr {
+                @include hr-form
+            }
+
+            form {
+                input {
+                    @include input-form;
+                }
+
+                button {
+                    @include button-form;
+
+                    &:hover {
+                        @include btn-hover
+                    }
+
+                    i {
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+
+        //barSide
+        .below-side {
+            a {
+                @include bar-block;
+
+                &:hover {
+
+                    @include btn-hover;
+                }
+            }
+        }
+    }
+}

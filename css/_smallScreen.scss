@@ -1,0 +1,48 @@
+@import "_variables";
+
+// Top menu on small screens
+header {
+    color: #fff;
+    background-color: #000;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    visibility: hidden;
+
+    span {
+        padding: 8px 16px;
+        width: auto;
+        border: none;
+        display: block;
+        outline: 0;
+    }
+
+    a {
+        padding-right: 20px;
+
+        i {
+            color: #fff;
+        }
+    }
+
+}
+
+//Overlay effect when opening sidebar on small screens 
+.overlay-effect.active {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}

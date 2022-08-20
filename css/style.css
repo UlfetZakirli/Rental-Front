@@ -1,0 +1,452 @@
+body {
+  line-height: 1.5;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+body nav {
+  width: 260px;
+  background-color: #f1f1f1;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+body nav i.remove-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 8px 16px;
+  display: none;
+  transition: 0.2s all ease-in-out;
+}
+body nav i.remove-icon:hover {
+  color: #000;
+  background-color: #ccc;
+}
+body nav.active {
+  display: block !important;
+}
+body nav #mySidebar {
+  transition: 0.3s ease-in-out !important;
+}
+body nav .above-side {
+  padding: 0.01em 16px;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+body nav .above-side .h3-text, body nav .above-side h6 {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 10px 0;
+}
+body nav .above-side h6 {
+  font-size: 16px;
+}
+body nav .above-side hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+body nav .above-side form input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  overflow: visible;
+  margin: 13px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+body nav .above-side form button {
+  color: #fff;
+  background-color: #4CAF50;
+  text-align: left;
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 10px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: 0.3s ease-in-out;
+}
+body nav .above-side form button:hover {
+  color: #000;
+  background-color: #ccc;
+}
+body nav .above-side form button i {
+  margin-right: 16px;
+}
+body nav .below-side a {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  outline: 0;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+body nav .below-side a:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.right-side {
+  margin-left: 260px;
+}
+.right-side .slider .title {
+  color: #4CAF50;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 30px;
+}
+.right-side .slider .mySlides {
+  position: relative;
+}
+.right-side .slider .mySlides img {
+  width: 100%;
+  margin-bottom: -6px;
+  vertical-align: middle;
+}
+.right-side .slider .mySlides .img-text {
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 1em 16px;
+}
+.right-side .slider-below {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.right-side .slider-below .img-col-3 {
+  width: 24.99999%;
+  float: left;
+  margin-bottom: 18px;
+  padding: 0 8px;
+  vertical-align: middle;
+  transition: 0.2s all ease-in-out;
+}
+.right-side .slider-below .img-col-3 .img-opacity {
+  opacity: 0.6;
+}
+.right-side .slider-below .img-col-3:hover {
+  opacity: 1;
+}
+.right-side .slider-below .opacity-off {
+  opacity: 1 !important;
+}
+.right-side .space h4 {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.right-side .space .space-below {
+  font-size: 18px;
+}
+.right-side .space .space-below p {
+  margin: 20px 0;
+}
+.right-side .space .space-below p i {
+  width: 1.28571429em;
+  text-align: center;
+}
+.right-side .space .space-below p i.clock {
+  font-size: 15px;
+}
+.right-side .space hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+.right-side .space p.info {
+  margin-bottom: 20px;
+}
+.right-side .space button {
+  color: #fff;
+  background-color: #4CAF50;
+  text-align: left;
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 10px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  margin-top: 10px;
+}
+.right-side .space button:hover {
+  color: #000;
+  background-color: #ccc;
+}
+.right-side .contact h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.right-side .contact i {
+  width: 30px;
+  line-height: 1.5;
+}
+.right-side .contact form input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  overflow: visible;
+  margin: 13px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.right-side .contact form button {
+  color: #fff;
+  background-color: #4CAF50;
+  text-align: left;
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 10px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+.right-side .contact form button:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.form-control.success input {
+  border: 2px solid rgb(26, 167, 26) !important;
+}
+
+.form-control.error input {
+  border: 2px solid rgb(228, 29, 22) !important;
+}
+
+.form-control small {
+  display: none;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+header {
+  color: #fff;
+  background-color: #000;
+  font-size: 24px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  visibility: hidden;
+}
+header span {
+  padding: 8px 16px;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+header a {
+  padding-right: 20px;
+}
+header a i {
+  color: #fff;
+}
+
+.overlay-effect.active {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.subscribe-modal {
+  z-index: 3;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.subscribe-modal .modal-content {
+  padding: 12px 24px;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  outline: 0;
+  width: 900px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.subscribe-modal .modal-content .modal {
+  text-align: center;
+}
+.subscribe-modal .modal-content .modal i {
+  float: right;
+  font-size: 24px;
+  padding: 8px 16px !important;
+  text-align: center;
+  cursor: pointer;
+  margin-top: -10px;
+}
+.subscribe-modal .modal-content .modal i:hover {
+  color: #000;
+  background-color: #ccc;
+}
+.subscribe-modal .modal-content .modal h2 {
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 15px 0;
+  font-size: 30px;
+}
+.subscribe-modal .modal-content .modal .modal-input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  overflow: visible;
+  margin: 13px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.subscribe-modal .modal-content .modal .modal-button {
+  padding: 12px 24px;
+  margin-bottom: 16px;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+  nav {
+    display: none;
+    z-index: 3;
+  }
+  nav i.remove-icon {
+    display: block !important;
+  }
+  .right-side {
+    margin-left: 0;
+    margin-top: 80px;
+  }
+  header {
+    visibility: visible;
+  }
+  header a {
+    z-index: 30 !important;
+  }
+  .subscribe-modal .modal-content {
+    width: 600px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .subscribe-modal {
+    padding-top: 50px !important;
+  }
+  .subscribe-modal .modal-content {
+    width: 500px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .space p button.search {
+    width: 100% !important;
+  }
+  .contact form button {
+    width: 100% !important;
+  }
+  .subscribe-modal {
+    padding-top: 50px !important;
+  }
+  .subscribe-modal .modal-content {
+    margin: 0 10px !important;
+    width: auto !important;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.my-container {
+  padding: 0.01em 16px;
+}
+
+.space-col-6 {
+  width: 49.99999%;
+}
+
+.space-col-4 {
+  width: 33.33333% !important;
+  font-size: 50px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.mtb {
+  margin: 10px 0;
+}
+
+.mt {
+  margin-top: 25px !important;
+}/*# sourceMappingURL=style.css.map */
