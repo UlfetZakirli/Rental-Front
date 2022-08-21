@@ -21,7 +21,7 @@
         width: 900px;
         padding-left: 40px;
         padding-right: 40px;
-
+        animation: animatezoom 0.6s;
         .modal {
             text-align: center;
 
@@ -70,5 +70,15 @@
                 }
             }
         }
+    }
+}
+
+
+@keyframes animatezoom{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
     }
 }

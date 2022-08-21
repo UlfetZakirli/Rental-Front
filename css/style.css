@@ -327,6 +327,8 @@ header a i {
   width: 900px;
   padding-left: 40px;
   padding-right: 40px;
+  -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s;
 }
 .subscribe-modal .modal-content .modal {
   text-align: center;
@@ -380,6 +382,23 @@ header a i {
   background-color: #ccc;
 }
 
+@-webkit-keyframes animatezoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media only screen and (max-width: 992px) {
   nav {
     display: none;
